@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "serve",
-    "build": "!"
+    "build": "e"
   },
   "keywords": [],
   "author": "Don iver",
