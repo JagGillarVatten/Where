@@ -1,0 +1,17 @@
+{
+  "name": "Where?",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve",
+    "build": "!"
+  },
+  "keywords": [],
+  "author": "Don iver",
+  "license": "none",
+  "homepage": "be",
+  "devDependencies": {
+    "serve": "^11.2.0"
+  }
+}

@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  transform: rotateX(-24deg) rotateY(29deg);
+  transform-style: preserve-3d;
+  background: radial-gradient(#4e9191, #5eb6b6);
+}
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.yo img {
+  border: 20px solid #fefefe;
+  filter: drop-shadow(0rem 1.9rem 0px rgb(0, 0, 0));
+  z-index: 0;
+}
+
+.yo h1 {
+  position: fixed;
+  font-family: Poppins;
+  font-size: 5rem;
+  transform: translate: 1rem, -90rem);
+  box-align: right;
+  color: rgb(0, 0, 0);
+  text-align: right;
+  z-index: 1;
+}
+
+.rambling {
+  font-size: 1.5em;
+  font-family: poppins;
+  color: black;
+}
+
+.site {
+  color: rgb(198, 218, 255);
+  font-family: "poppins", sans-serif;
+  font-size: 10rem;
+  filter: drop-shadow(0rem 0.9rem 0px rgb(105, 96, 96));
+  text-align: center;
+  transition: 0.6s ease-out;
+  animation: Intro 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0s 1 normal forwards;
+}
+
+.site:hover {
+  color: rgb(146, 130, 219);
+  filter: drop-shadow(0rem 0.2rem 0px #000);
+}
+
+.site h1 {
+  perspective: 242rem; /* Applying perspective transform only to h1 with .site */
+}
+
+@keyframes Intro {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hidden-content {
+  opacity: 0;
+  transform: translateY(50%);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
